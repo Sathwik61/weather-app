@@ -20,7 +20,7 @@ btn.addEventListener("click", (e) => {
     loading.style.display = 'block';
     let city_name = inn.value;
 
-    const API_key = "14cbef8b5f6bb2c23b254425eec03694";
+    const API_key = "YOUR_API_KEY";
     if (city_name) {
 
         const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city_name}&appid=${API_key}`;
