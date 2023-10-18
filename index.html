@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather app</title>
+</head>
+
+<body
+    class="flex justify-center items-center min-h-screen bg-gradient-to-r from-teal-500 via-blue-500 to-indigo-500 bg-gradient-tl-to-br backdrop-blur-lg">
+
+    <div class="bg-white rounded-lg shadow-lg p-8 max-w-md text-center">
+        <h1 class="text-4xl font-semibold mb-6 text-purple-700">Weather App</h1>
+        <div class="flex items-center justify-center mb-6">
+            <input id="area" type="text" placeholder="Enter the city..."
+                class="py-2 px-4 border border-purple-500 rounded-l-full focus:outline-none focus:ring focus:border-purple-700 text-purple-700 transition duration-300 ease-in-out hover:bg-purple-100">
+            <button id="btn" type="button"
+                class="bg-purple-700 text-white rounded-r-full py-2 px-6 focus:outline-none focus:ring focus:border-purple-700 transition duration-300 ease-in-out hover:bg-purple-800 search-button">
+                Search
+            </button>
+        </div>
+        <div id="loading" class="loading"></div>
+        <div class="mb-6 " id="ddata">
+            <!-- <p class="text-xl font-semibold mb-2 text-purple-700">Temperature: 0°C</p>
+            <p class="text-xl font-semibold mb-2 text-purple-700">Humidity: 0%</p>
+            <p class="text-xl font-semibold mb-2 text-purple-700">Wind: 0 km/h</p> -->
+        </div>
+        <div class="weather-icon mx-auto">
+            <!-- Sun SVG Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="text-yellow-500 h-16 w-16">
+                <path
+                    d="M12 18c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3zm0-10c-2.209 0-4 1.791-4 4s1.791 4 4 4 4-1.791 4-4-1.791-4-4-4zM12 2c-.553 0-1 .447-1 1v1c0 .553.447 1 1 1s1-.447 1-1V3c0-.553-.447-1-1-1zm0 16c-.553 0-1 .447-1 1v1c0 .553.447 1 1 1s1-.447 1-1v-1c0-.553-.447-1-1-1zM4.293 3.293c-.195.195-.293.451-.293.707v1c0 .553.447 1 1 1s1-.447 1-1V5.414l1.646 1.647c-.242.208-.46.441-.648.695l-1.664-.941c-.088-.05-.183-.086-.284-.106l-.211-1.81c-.292-.066-.569-.192-.812-.368L3 3.85V3c0-.256-.098-.512-.293-.707zM19.707 3.293C19.512 3.488 19.414 3.744 19.414 4v1c0 .553.447 1 1 1s1-.447 1-1V5.414l1.646 1.647c-.243.208-.461.441-.649.695l-1.664-.941c-.089-.05-.184-.086-.285-.106l-.21-1.81c-.292-.066-.569-.192-.812-.368L18 3.85V3c0-.256-.098-.512-.293-.707z" />
+            </svg>
+        </div>
+    </div>
+
+
+    <script src="back.js"></script>
+</body>
+
+</html>
